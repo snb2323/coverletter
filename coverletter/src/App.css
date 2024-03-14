@@ -420,8 +420,7 @@ h1 {
 
 
 .worksimg {
-  max-height: 100vh;
-  padding: 100px;
+  max-width: 100%;
 }
 
 
@@ -686,7 +685,7 @@ input:focus {
   }
 
   .myphto {
-    width: 500px;
+    max-width: 500px;
   }
 
   .en {
@@ -716,7 +715,7 @@ input:focus {
   }
 
   .works_back {
-    width: 100%;
+    max-width: 100%;
   }
 
 
@@ -744,9 +743,6 @@ input:focus {
 
   }
 
-  .backicon a {
-    display: none;
-  }
 
   .tp img {
     max-width: 130px;

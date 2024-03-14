@@ -37,9 +37,9 @@ export default function Project() {
                 >
                     <SwiperSlide>
                         <div className="phtoflilo container d-lg-flex justify-content-center align-items-center flex-lg-row-reverse ">
-                            <div className="works col-10 col-lg-12 mx-auto">
+                            <div className="works col-10 col-lg-6 mx-auto">
                                 <div className="period b-flex">
-                                    <h4> <span># 개인프로젝트</span> / <span className="prohece">아인서점</span> <span className="myzde">.</span>
+                                    <h4> <span># 개인프로젝트</span> / <span className="prohece">아인서점</span>
                                     </h4>
                                     <p className="wors">
                                         독립서점 웹 프로젝트를 선정한 이유는 다른 서점들과 달리 <br></br>편안하고 직관적인 디자인으로 사용자들이 쉽게 원하는 작품을 <br></br>찾을 수 있는 경험을 제공하고자 했습니다. 또한,  <br></br> 독자들 간의 소통을 촉진하는 리뷰 및 추천 기능을 도입하여 더욱 풍부한 사용자 경험을 제공하고자 합니다.
@@ -47,7 +47,7 @@ export default function Project() {
                                 </div>
 
 
-                                <div className="period b-flex ">
+                                <div className="period  pt-5 b-flex ">
                                     <h4># Period</h4>
                                     <p>2022.02.10 ~ 2022.03.15</p>
                                 </div>
@@ -77,8 +77,8 @@ export default function Project() {
                                 </div>
                             </div>
 
-                            <div className="works d-flex justify-content-center">
-                                <img className="worksimg" src="../project/ainproject.png" alt="ainbook" />
+                            <div className="works col-lg-6 py-5 py-lg-0 d-flex justify-content-center">
+                                <img className="worksimg col-lg-8 col-8 my-5 my-lg-0" src="../project/ainproject.png" alt="ainbook" />
                             </div>
                         </div>
                     </SwiperSlide>
