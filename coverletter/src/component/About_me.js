@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Nav, Navbar, Button } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 
 const Leedongmin = {
@@ -10,8 +10,6 @@ const Leedongmin = {
     email: "dheltus1r@naver.com",
     MBTI: "INFJ",
 };
-
-// 코드 문자열을 정의.
 
 const codeString = `
 <div class="lee">
@@ -26,25 +24,20 @@ const codeString = `
 `;
 
 export default function About() {
-    const [showmenu, setshowmenu] = useState(false) //버튼을 클릭할시에만 메뉴나오게 
-    const [displayText, setDisplayText] = useState(""); //나의소개 상태관리 타이핑효과
-    const [clickedSection, setClickedSection] = useState(null);//navivar링크 클릭시 font-style변경
+    const [displayText, setDisplayText] = useState("");
+    const [clickedSection, setClickedSection] = useState(null);
+    const [showmenu, setshowmenu] = useState(false)
 
-
-    const tooglemenu = () => {
-        setshowmenu(!showmenu)
-    }
-    // 네비게이션 링크 클릭시 상태 업데이트하는 함수
     const handleclick = (section) => {
         setClickedSection(section);
     };
 
+
     useEffect(() => {
         let i = 0;
         let animationFrameId;
-        const typingSpeed = 7; // Characters per frame
+        const typingSpeed = 7;
 
-            // 타이핑 효과 애니메이션을 생성
         const animateTyping = () => {
             for (let j = 0; j < typingSpeed && i < codeString.length; j++) {
                 let txt = codeString[i++];
@@ -56,26 +49,36 @@ export default function About() {
             if (i < codeString.length) {
                 animationFrameId = requestAnimationFrame(animateTyping);
             }
-            console.log(codeString)
-
         };
-        // 컴포넌트가 마운트되면 타이핑 애니메이션 시작
+
         animateTyping();
-        // 컴포넌트가 언마운트되면 애니메이션 정리
+
         return () => cancelAnimationFrame(animationFrameId);
     }, [codeString]);
+    const togglemenu = () => {
+        setshowmenu(!showmenu)
+    };
+
+    useEffect(() => {
+        const allmenu = document.querySelector(".btni button");
+        allmenu.addEventListener('click', () => {
+            document.querySelector(".btni").classList.toggle("toggle")
+        })
+        console.log("allmenu")
+    }, [])
 
     return (
         <>
-            <Navbar bg="dark" variant="dark" className="my_navar d-flex justify-content-end">
+            <div className={`btni  d-md-none `}>
+                <button onClick={togglemenu} className='border-0 bg-transparent '>메뉴</button>
+            </div>
+            <Navbar bg="dark" variant="dark" className="my_navar d-none d-lg-flex  justify-content-end">
                 <Navbar.Brand href="#home"></Navbar.Brand>
                 <Nav className="mx-4">
-                    <div className="aboutlogo ">
+                    <div className="aboutlogo d-none d-lg-flex ">
                         <img src="https://www.abe9.co.kr/data/common/logo_img" alt="logo"></img>
                     </div>
-                    <Button variant="outline-light" onClick={tooglemenu} className={`btni d-md-none ${showmenu ? 'close-menu' : ''}`}>
-                        {showmenu ? '닫기' : '메뉴'}
-                    </Button>
+
                     <Nav.Link
                         className={clickedSection === "about" ? "section clicked" : "section"}
                         onClick={() => handleclick("about")}
@@ -114,21 +117,18 @@ export default function About() {
                 </Nav>
             </Navbar>
 
-            {/* Your Navbar code */}
             <div className="container">
                 <div className="ldm px-5 mx-5">
                     <div className="leeabout">
                         <div className="leetext">
-                            <div id="aboutSection"className="abouttitle text-center">
+                            <div id="aboutSection" className="abouttitle text-center">
                                 <strong className="en">FRONTEND</strong>
                                 <strong className="kr">이동민</strong>
                             </div>
                             <div className="abtext text-center">
                                 <p>안녕하세요 저는 프론트엔드 개발자가 되고 싶은 이동민입니다. 시간을 내어 제 포트폴리오를 봐주셔서 감사합니다.</p>
                             </div>
-                            <div className="leeobj">
-                                <div dangerouslySetInnerHTML={{ __html: displayText }} />
-                            </div>
+                            <div className="leeobj" dangerouslySetInnerHTML={{ __html: displayText }} />
                         </div>
                     </div>
                     <div className="myphto">

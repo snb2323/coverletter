@@ -69,7 +69,7 @@ export default function Project() {
                                 </div>
                                 <div className="backicon d-flex ">
                                     <a href="https://github.com/snb2323/portfolio" target="blank"> <FaGithub className=" mb-3"></FaGithub></a>
-                                    <a href="https://www.figma.com/file/3ePwKovJqYTbLRALUgC49p/%EA%B0%9C%EC%9D%B8%ED%8F%AC%ED%8F%B4?type=design&node-id=0-1&mode=design&t=b9cfMOFQkPggPayT-0" target="blank">   <FaFigma className="mx-3 mb-3"></FaFigma></a>
+                                    <a href="https://www.figma.com/file/3ePwKovJqYTbLRALUgC49p/%EA%B0%9C%EC%9D%B8%ED%8F%AC%ED%8F%B4?type=design&node-id=0%3A1&mode=dev&t=092PlsjjVsTcTqbL-1" target="blank">   <FaFigma className="mx-3 mb-3"></FaFigma></a>
                                     <a href="https://www.notion.so/1e7173072d194f90a7c2f3a8bb04b2ce"> <img src="./img/notion.svg" className="notionimg"></img></a>
                                     <a href="http://ainbook.cafe24app.com/" target="blank">
                                         <HiLink className="sitelink" />

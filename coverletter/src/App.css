@@ -267,7 +267,7 @@ h1 {
 
 .tp img {
   padding: 20px;
-  min-width: 170px;
+  width: 170px;
 }
 
 .navi a {
@@ -593,7 +593,7 @@ h1 {
 }
 
 .contact {
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .contactin {
@@ -601,7 +601,7 @@ h1 {
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #111;
-  min-width: 500px;
+  width: 500px;
 }
 
 .contactin::placeholder {
@@ -617,6 +617,38 @@ input:focus {
   bottom: 0;
 }
 
+.btni button {
+  font-size: 0;
+  line-height: 0;
+}
+
+.btni button:before {
+  font-size: 2rem;
+  content: "\F479";
+  font-family: "bootstrap-icons";
+}
+
+
+
+
+/* //after 이용해서 햄버거출력 */
+.toggle button:before {
+  content: "\F659";
+
+}
+
+
+.toggle+.my_navar {
+  display: block !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background-color: white;
+
+}
+
+
 @keyframes blink {
   to {
     opacity: 0;
@@ -629,9 +661,27 @@ input:focus {
     flex-direction: column;
   }
 
+  .navbar-expand .navbar-nav .nav-link {
+    width: 100px;
+    font-size: 15px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .my_navar {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
   .leetext {
     max-width: 350px;
-    font-size: 20px;
+    margin-left: 25px;
+
 
   }
 
@@ -640,7 +690,7 @@ input:focus {
   }
 
   .en {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .kr {
@@ -689,7 +739,24 @@ input:focus {
     display: none;
   }
 
-  /* .tp img {
-    width: 80px;
-  } */
+  .interview p {
+    width: 400px;
+    margin-left: 30px
+  }
+
+  .backicon a {
+    display: none;
+  }
+
+  .tp img {
+    width: 130px;
+  }
+
+  .contactin {
+    width: 260px;
+  }
+
+  .myphto img {
+    display: none;
+  }
 }
