@@ -36,8 +36,8 @@ export default function Project() {
                     className="d-md-flex  mt-4 mx-5"
                 >
                     <SwiperSlide>
-                        <div className="phtoflilo container d-flex justify-content-center align-items-center flex-row-reverse ">
-                            <div className="works">
+                        <div className="phtoflilo container d-lg-flex justify-content-center align-items-center flex-lg-row-reverse ">
+                            <div className="works col-10 col-lg-12 mx-auto">
                                 <div className="period b-flex">
                                     <h4> <span># 개인프로젝트</span> / <span className="prohece">아인서점</span> <span className="myzde">.</span>
                                     </h4>

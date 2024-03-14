@@ -9,7 +9,7 @@ export default function Skill() {
                     <h1 id="skillsSection">Skills</h1>
                 </div>
                 <div className='skillimg d-flex row mx-0 mb-5  justify-content-center align-items-center text-align-center'>
-                    <div className='tp text-center col-4 '>
+                    <div className='tp text-center col-md-4 col-10 '>
                         <img src="../img/react.svg" alt="" />
                         <div className="skillstext">
                             <div className="skkikls d-flex flex-column">
@@ -19,7 +19,7 @@ export default function Skill() {
                             </div>
                         </div>
                     </div>
-                    <div className='tp text-center col-4 '>
+                    <div className='tp text-center col-md-4 col-10 '>
                         <img src="../img/js.svg" alt="" />
                         <div className="skillstext">
                             <p>JavaScript(70%)</p>
@@ -27,7 +27,7 @@ export default function Skill() {
                             <p className="sks"># 비동기 작업을 처리하여 데이터 흐름을 효율적으로 관리했습니다. </p>
                         </div>
                     </div>
-                    <div className='tp text-center col-4 '>
+                    <div className='tp text-center col-md-4 col-10 '>
                         <img src="../img/jquery.svg" alt="" />
                         <div className="skillstext">
                             <p>Jquery(70%)</p>
@@ -36,7 +36,7 @@ export default function Skill() {
                         </div>
                     </div>
 
-                    <div className='tp text-center col-4 '>
+                    <div className='tp text-center col-md-4 col-10 '>
                         <img src="../img/html.svg" alt="" />
                         <div className="skillstext">
                             <p>HTML/CSS(70%)</p>
@@ -44,7 +44,7 @@ export default function Skill() {
                             <p className="sks"># 다양한 디바이스에서 일관된 UI/UX를 제공하기 위해 반응형 웹 디자인에 중점. </p>
                         </div>
                     </div>
-                    <div className='tp text-center col-4 '>
+                    <div className='tp text-center col-md-4 col-10 '>
                         <img src="../img/bootstrap.svg" alt="" />
                         <div className="skillstext">
                             <p>BootStrap(70%)</p>
@@ -52,7 +52,7 @@ export default function Skill() {
                             <p className="sks"># 그리드 시스템과 컴포넌트를 활용하여 빠르게 프로토타입을 제작.</p>
                         </div>
                     </div>
-                    <div className='tp text-center col-4 '>
+                    <div className='tp text-center col-md-4 col-10 '>
                         <img src="../img/figma.svg" alt="" />
                         <div className="skillstext">
                             <p>Figma(70%)</p>

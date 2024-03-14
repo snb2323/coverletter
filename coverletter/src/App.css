@@ -399,7 +399,7 @@ h1 {
 
 
 .interview p {
-  width: 600px;
+  max-width: 600px;
   ;
   line-height: 2;
   border-top: 1px solid #02131D;
@@ -740,8 +740,8 @@ input:focus {
   }
 
   .interview p {
-    width: 400px;
-    margin-left: 30px
+    max-width: 400px;
+
   }
 
   .backicon a {
@@ -749,11 +749,11 @@ input:focus {
   }
 
   .tp img {
-    width: 130px;
+    max-width: 130px;
   }
 
   .contactin {
-    width: 260px;
+    max-width: 260px;
   }
 
   .myphto img {
