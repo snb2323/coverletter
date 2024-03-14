@@ -72,15 +72,14 @@ export default function About() {
 
     return (
         <>
-            <div className={`btni  d-md-none `}>
-                <button onClick={togglemenu} className='border-0 bg-transparent '><CiMenuBurger></CiMenuBurger></button>
-            </div>
-            <Navbar bg="dark" variant="dark" className="my_navar d-none d-lg-flex  justify-content-end">
-                <Navbar.Brand href="#home"></Navbar.Brand>
-                <Nav className="mx-4">
-                    <div className="aboutlogo d-none d-lg-flex ">
-                        <img src="https://www.abe9.co.kr/data/common/logo_img" alt="logo"></img>
-                    </div>
+
+            <Navbar bg="dark" variant="dark" className="my_navar d-lg-flex  justify-content-space-between">
+                <Navbar.Brand href="#home" className="aboutlogo d-block d-lg-flex ">LDM Portfolio</Navbar.Brand>
+                <div className={`btni  d-lg-none `}>
+                    <button onClick={togglemenu} className='border-0 bg-transparent '><CiMenuBurger></CiMenuBurger></button>
+                </div>
+                <Nav className="mx-4 gnb">
+
 
                     <Nav.Link
                         className={clickedSection === "about" ? "section clicked" : "section"}
@@ -120,7 +119,7 @@ export default function About() {
                 </Nav>
             </Navbar>
 
-            <div className="container">
+            <div id="home" className="container">
                 <div className="ldm px-5 mx-5">
                     <div className="leeabout">
                         <div className="leetext">

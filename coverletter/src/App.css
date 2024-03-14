@@ -30,11 +30,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-.aboutlogo {
-  top: 30px;
-  position: absolute;
-  left: 70px;
-}
 
 .wors {
   line-height: 2;
@@ -75,6 +70,8 @@ h1 {
   padding: 0 60px;
   left: 0;
   background-color: white !important;
+  display: flex !important;
+  justify-content: space-around !important;
 }
 
 .my_navar a {
@@ -619,6 +616,9 @@ input:focus {
   bottom: 0;
 }
 
+.btni button {
+  font-size: 2rem;
+}
 
 
 @keyframes blink {
@@ -728,4 +728,27 @@ input:focus {
   .myphto img {
     display: none;
   }
+}
+
+
+@media (max-width:990px) {
+  .gnb.navbar-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    display: none;
+
+  }
+
+  .gnb.navbar-nav a {
+    text-align: center;
+    display: block;
+  }
+
+  .btni.toggle+.gnb {
+    display: block !important;
+  }
+
 }
