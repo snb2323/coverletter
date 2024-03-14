@@ -37,7 +37,7 @@ h1 {
 }
 
 .wors {
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .en {
@@ -399,8 +399,8 @@ h1 {
 
 
 .interview p {
-  max-width: 600px;
-  ;
+  width: 600px;
+  min-width: 400px;
   line-height: 2;
   border-top: 1px solid #02131D;
   border-bottom: 1px solid #02131D;
@@ -418,6 +418,9 @@ h1 {
 }
 
 
+.petwors {
+  line-height: 2;
+}
 
 .worksimg {
   max-width: 100%;
@@ -616,36 +619,6 @@ input:focus {
   bottom: 0;
 }
 
-.btni button {
-  font-size: 0;
-  line-height: 0;
-}
-
-.btni button:before {
-  font-size: 2rem;
-  content: "\F479";
-  font-family: "bootstrap-icons";
-}
-
-
-
-
-/* //after 이용해서 햄버거출력 */
-.toggle button:before {
-  content: "\F659";
-
-}
-
-
-.toggle+.my_navar {
-  display: block !important;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  background-color: white;
-
-}
 
 
 @keyframes blink {

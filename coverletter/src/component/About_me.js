@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Nav, Navbar } from 'react-bootstrap';
+import { CiMenuBurger } from "react-icons/ci";
+
+
 
 
 const Leedongmin = {
@@ -70,7 +73,7 @@ export default function About() {
     return (
         <>
             <div className={`btni  d-md-none `}>
-                <button onClick={togglemenu} className='border-0 bg-transparent '>메뉴</button>
+                <button onClick={togglemenu} className='border-0 bg-transparent '><CiMenuBurger></CiMenuBurger></button>
             </div>
             <Navbar bg="dark" variant="dark" className="my_navar d-none d-lg-flex  justify-content-end">
                 <Navbar.Brand href="#home"></Navbar.Brand>
