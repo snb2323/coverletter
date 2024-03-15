@@ -68,7 +68,6 @@ const Contact = () => {
                 // 메시지가 있는 경우 해당 메시지와 재설정 버튼을 표시.
                 <div>감사합니다. 빠른 응답드리도록 하겠습니다. <button onClick={handleReset}>다시작성하기</button></div> :
 
-                // 메시지가 없는 경우 폼을 표시.
                 <form onSubmit={handleSubmit}>
                     <fieldset>
                         <legend>
