@@ -4,7 +4,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 
 export default function Preinterview() {
-    const [selectedQuestion, setSelectedQuestion] = useState(null); //선택된 질문을 추척
+    const [selectedQuestion, setSelectedQuestion] = useState(null); //선택된 질문을 추척함
 
     const questions = [
         "프론트 엔드 개발자가 된 동기",

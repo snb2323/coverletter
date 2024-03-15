@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Contact = () => {
-    // useState 훅을 사용하여 상태 변수를 정의합니다.
+    // useState 훅을 사용하여 상태 변수를 정의합니다 .
     const [msg, setMsg] = useState(null); // 메시지 응답을 저장하는 상태 변수
     const [formData, setFormData] = useState({ // 폼 데이터를 저장하는 상태 변수
         company_name: "",
