@@ -20,7 +20,7 @@ function App() {
       <Project></Project>
       <Preinteriew></Preinteriew>
       <Contact></Contact>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 }

@@ -36,7 +36,7 @@ h1 {
 }
 
 .en {
-  color: #111;
+  color: #0c1c3c;
   font-size: 46px;
 
   text-align: center;
@@ -49,6 +49,7 @@ h1 {
 }
 
 .kr {
+  color: #0c1c3c !important;
   border-left: 3px solid #ddd;
   font-size: 36px;
   font-weight: 600;

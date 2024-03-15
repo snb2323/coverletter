@@ -87,7 +87,7 @@ export default function Project() {
                         <div className="phtoflilo container d-lg-flex justify-content-center align-items-center flex-lg-row-reverse ">
                             <div className="works col-10 col-lg-6 mx-auto">
                                 <div className="period b-flex">
-                                    <h4 className="pt-5"> <span># 개인프로젝트</span> / <span className="prohece">CRA SPA자소서</span>
+                                    <h4 className="pt-5"> <span># 개인프로젝트</span> / <span className="prohece">CRA 자소서</span>
                                     </h4>
                                     <p className="petwors">
 
@@ -116,10 +116,10 @@ export default function Project() {
 
                                 </div>
                                 <div className="backicon d-flex ">
-                                    <a href="https://github.com/snb2323/portfolio" target="blank"> <FaGithub className=" mb-3"></FaGithub></a>
-                                    <a href="https://www.figma.com/file/3ePwKovJqYTbLRALUgC49p/%EA%B0%9C%EC%9D%B8%ED%8F%AC%ED%8F%B4?type=design&node-id=0%3A1&mode=dev&t=092PlsjjVsTcTqbL-1" target="blank">   <FaFigma className="mx-3 mb-3"></FaFigma></a>
+                                    <a href="https://github.com/snb2323/CRA-coverletter" target="blank"> <FaGithub className=" mb-3"></FaGithub></a>
+                                    <a href="https://www.figma.com/file/RDBdOswXvMWdwM5ZCbxrqF/%EC%9D%B4%EB%8F%99%EB%AF%BC-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%9E%90%EC%86%8C%EC%84%9C?type=design&node-id=0%3A1&mode=dev&t=C7t1j2WMUxxxZsek-1" target="blank">   <FaFigma className="mx-3 mb-3"></FaFigma></a>
                                     <a href="https://www.notion.so/1e7173072d194f90a7c2f3a8bb04b2ce"> <img src="./img/notion.svg" className="notionimg"></img></a>
-                                    <a href="http://ainbook.cafe24app.com/" target="blank">
+                                    <a href="http://leedongmin.cafe24app.com/" target="blank">
                                         <HiLink className="sitelink" />
                                     </a>
                                 </div>
@@ -168,10 +168,10 @@ export default function Project() {
 
                                 </div>
                                 <div className="backicon d-flex ">
-                                    <a href="https://github.com/snb2323/portfolio" target="blank"> <FaGithub className=" mb-3"></FaGithub></a>
-                                    <a href="https://www.figma.com/file/3ePwKovJqYTbLRALUgC49p/%EA%B0%9C%EC%9D%B8%ED%8F%AC%ED%8F%B4?type=design&node-id=0%3A1&mode=dev&t=092PlsjjVsTcTqbL-1" target="blank">   <FaFigma className="mx-3 mb-3"></FaFigma></a>
-                                    <a href="https://www.notion.so/1e7173072d194f90a7c2f3a8bb04b2ce"> <img src="./img/notion.svg" className="notionimg"></img></a>
-                                    <a href="http://ainbook.cafe24app.com/" target="blank">
+                                    <a href="https://github.com/KimGyuWan/react-nodejs.github.io" target="blank"> <FaGithub className=" mb-3"></FaGithub></a>
+                                    <a href="https://www.figma.com/file/EClovPOgwcn8n6xqLZsvIG/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?type=design&node-id=0%3A1&mode=dev&t=PCToN1GpqIvMZfAP-1" target="blank">   <FaFigma className="mx-3 mb-3"></FaFigma></a>
+                                    <a href="https://www.notion.so/1e7173072d194f90a7c2f3a8bb04b2ce" target="blank"> <img src="./img/notion.svg" className="notionimg"></img></a>
+                                    <a href="https://kimgyuwan.github.io/petfood.github.io/" target="blank">
                                         <HiLink className="sitelink" />
                                     </a>
                                 </div>
