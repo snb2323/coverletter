@@ -398,7 +398,7 @@ h1 {
 
 .interview p {
   width: 600px;
-  min-width: 400px;
+
   line-height: 2;
   border-top: 1px solid #02131D;
   border-bottom: 1px solid #02131D;
@@ -621,6 +621,32 @@ input:focus {
   font-size: 2rem;
 }
 
+.formbtnn {
+  background: aliceblue;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  flex-direction: column;
+}
+
+.eg {
+  color: #9ecdfb;
+
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.form_btn button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding: 5px;
+  border-bottom: 1px solid;
+  font-size: 1.2rem;
+}
 
 @keyframes blink {
   to {
@@ -713,7 +739,7 @@ input:focus {
   }
 
   .interview p {
-    max-width: 400px;
+    max-width: 370px;
 
   }
 
@@ -738,7 +764,7 @@ input:focus {
     left: 0;
     right: 0;
     top: 100%;
-    background-color: white;
+    background-color: aliceblue;
     display: none;
 
   }

@@ -66,7 +66,18 @@ const Contact = () => {
 
             {msg ? // 메시지 상태에 따른 조건부 렌더링
                 // 메시지가 있는 경우 해당 메시지와 재설정 버튼을 표시.
-                <div>감사합니다. 빠른 응답드리도록 하겠습니다. <button onClick={handleReset}>다시작성하기</button></div> :
+                <div className="formbtnn">
+
+                    <div className="formp">
+                        <p className="eg">Thank you for taking the time to look!</p>
+                        <p className="ko"> 시간을 내어 봐주셔서 감사합니다!</p>
+                    </div>
+
+                    <div className="form_btn">
+                        <button onClick={handleReset}>Go back</button>
+                    </div>
+
+                </div> :
 
                 <form onSubmit={handleSubmit}>
                     <fieldset>
