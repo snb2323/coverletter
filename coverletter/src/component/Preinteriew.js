@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 
