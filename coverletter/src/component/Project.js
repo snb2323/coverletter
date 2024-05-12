@@ -20,8 +20,8 @@ export default function Project() {
 
     return (
         <>
-            <div className="pjc">
-                <div className='project d-flex justify-content-center align-items-center mt-5'>
+            <div className="pjc ">
+                <div className='project d-flex justify-content-center align-items-center m-5'>
                     <Link to="projectsSection" smooth={true} duration={500}></Link>
 
                     <h1 id="projectsSection">

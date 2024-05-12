@@ -127,8 +127,8 @@ export default function About() {
                                 <strong className="en">FRONTEND</strong>
                                 <strong className="kr">이동민</strong>
                             </div>
-                            <div className="abtext text-center">
-                                <p>안녕하세요 저는 프론트엔드 개발자가 되고 싶은 이동민입니다. 시간을 내어 제 포트폴리오를 봐주셔서 감사합니다.</p>
+                            <div className="abtext ">
+                                <p>안녕하세요! 함께 협력하고 서로 성장하는 것을 추구하는 이동민입니다. 함께 일하며 새로운 도전을 통해 발전하는 것을 즐기고 있습니다.</p>
                             </div>
                             <div className="leeobj" dangerouslySetInnerHTML={{ __html: displayText }} />
                         </div>

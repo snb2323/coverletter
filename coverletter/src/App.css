@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 3rem;
-  font-style: italic;
+
 }
 
 .sli,
@@ -229,9 +229,29 @@ h1 {
 
 /* SKILL */
 
+
+
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('./font/Cafe24Ssurround-v2.0.ttf') format('truetype'),
+    url('./font/Cafe24Ssurround-v2.0.otf') format('opentype'),
+    url('./font/Cafe24Ssurround-v2.0.woff2') format('woff2'),
+    url('./font/Cafe24Ssurround-v2.0.woff') format('woff');
+  /* 추가적인 폰트 속성을 지정할 수 있습니다. */
+}
+
 .skill {
+  background: linear-gradient(to top, #ffe680 50%, transparent 20%);
+  color: #fff;
+  -webkit-text-stroke: 3px #4B6587;
+  font-size: calc(max(35px, 2.5vw));
+  font-weight: 900;
   display: flex;
   justify-content: center;
+}
+
+.skill h1 {
+  font-family: 'Cafe24Ssurround';
 }
 
 .sks {
@@ -247,9 +267,9 @@ h1 {
   font-weight: 300;
 }
 
-.skill h1 {
+/* .skill h1 {
   border-bottom: 1px solid #02131D;
-}
+} */
 
 .sli {
   padding: 100px 0;
@@ -275,7 +295,14 @@ h1 {
 }
 
 .project {
-  padding: 100px 0;
+  /* font-family: 'Cafe24Ssurround', sans-serif; */
+  background: linear-gradient(to top, #ffe680 50%, transparent 20%);
+  color: #fff;
+  -webkit-text-stroke: 3px #4B6587;
+  font-size: calc(max(35px, 2.5vw));
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
 }
 
 .iodrop {
@@ -286,11 +313,11 @@ h1 {
 
 
 .projectstitle {
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
 .project h1 {
-  border-bottom: 1px solid #02131D;
+  font-family: 'Cafe24Ssurround';
 }
 
 
@@ -349,10 +376,13 @@ h1 {
   text-align: center;
 }
 
-.Preinterview {
-  padding: 100px 0;
+#Preinterview {
+  background: linear-gradient(to top, #ffe680 50%, transparent 20%);
+  color: #fff;
+  -webkit-text-stroke: 3px #4B6587;
+  font-size: calc(max(35px, 2.5vw));
+  font-weight: 900;
   display: flex;
-  margin: 20px;
   justify-content: center;
 }
 
@@ -363,7 +393,8 @@ h1 {
 }
 
 .Preinterview h1 {
-  border-bottom: 1px solid #02131D;
+  font-family: 'Cafe24Ssurround';
+
 }
 
 .pre p {
@@ -386,13 +417,9 @@ h1 {
   justify-content: center;
 }
 
-.Preinterview h1 {
-  border-bottom: 1px solid #02131D;
-}
+.Preinterview h1 {}
 
-.contact h1 {
-  border-bottom: 1px solid #02131D;
-}
+.contact h1 {}
 
 
 
@@ -434,6 +461,7 @@ h1 {
 
 /* contact */
 .contact {
+
   max-height: 300px;
 }
 
@@ -589,11 +617,18 @@ h1 {
 
 /* Contact_me */
 .contact h1 {
-  border-bottom: 1px solid #02131D;
+  font-family: 'Cafe24Ssurround';
 }
 
 .contact {
-  padding: 100px 0;
+
+  background: linear-gradient(to top, #ffe680 50%, transparent 20%);
+  color: #fff;
+  -webkit-text-stroke: 3px #4B6587;
+  font-size: calc(max(35px, 2.5vw));
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
 }
 
 .contactin {
@@ -698,7 +733,8 @@ input:focus {
   }
 
   .abtext {
-    font-size: 15px;
+    color: #4B6587;
+    font-size: calc(max(25px, 1.5vw))
   }
 
   .ldm {
