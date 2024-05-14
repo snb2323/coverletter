@@ -26,7 +26,7 @@ export default function Preinterview() {
 
     return (
         <>
-            <div className="prewrap">
+            <div className="prewrap container">
                 <div id="Preinterview" className="Preinterview d-flex justify-content-center align-items-center m-5">
                     <h1>Preinterview</h1>
                 </div>

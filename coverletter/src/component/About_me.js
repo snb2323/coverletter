@@ -123,12 +123,14 @@ export default function About() {
                 <div className="ldm px-5 mx-5">
                     <div className="leeabout">
                         <div className="leetext">
-                            <div id="aboutSection" className="abouttitle text-center">
-                                <strong className="en">FRONTEND</strong>
+                            <div id="aboutSection" className="abouttitle text-left p-5">
+                                <strong className="en">About Me</strong>
                                 <strong className="kr">이동민</strong>
                             </div>
-                            <div className="abtext ">
-                                <p>안녕하세요! 함께 협력하고 서로 성장하는 것을 추구하는 이동민입니다. 함께 일하며 새로운 도전을 통해 발전하는 것을 즐기고 있습니다.</p>
+                            <div className="abtext text-left p-2 ">
+
+                                <p>안녕하세요! 함께 협력하고 서로 성장하는 것을 추구하는
+                                    이동민입니다. 함께 일하며 새로운 도전을 통해 발전하는 것을 즐기고 있습니다.</p>
                             </div>
                             <div className="leeobj" dangerouslySetInnerHTML={{ __html: displayText }} />
                         </div>

@@ -59,8 +59,8 @@ const Contact = () => {
 
     // 컴포넌트 UI를 나타내는 JSX 구조
     return (
-        <div className="container">
-            <div id="Contact" className="contact d-flex justify-content-center align-items-center">
+        <div className="contactme container">
+            <div id="Contact" className="contact d-flex justify-content-center align-items-center m-5">
                 <h1> Contact me</h1>
             </div>
 

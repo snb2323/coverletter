@@ -2,6 +2,14 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('./font/Cafe24Ssurround-v2.0.ttf') format('truetype'),
+    url('./font/Cafe24Ssurround-v2.0.otf') format('opentype'),
+    url('./font/Cafe24Ssurround-v2.0.woff2') format('woff2'),
+    url('./font/Cafe24Ssurround-v2.0.woff') format('woff');
+  /* 추가적인 폰트 속성을 지정할 수 있습니다. */
+}
 
 
 .sitelink {
@@ -26,14 +34,13 @@ h1 {
 
 /* about */
 
-.abouttitle {
-  margin-bottom: 20px;
-}
 
 
 .wors {
   line-height: 2;
 }
+
+
 
 .en {
   color: #0c1c3c;
@@ -43,7 +50,11 @@ h1 {
 }
 
 .abtext {
-  font-size: 20px;
+  text-align: left;
+  margin-bottom: 3vw;
+  color: #4B6587;
+  font-size: calc(max(20px, 1.5vw));
+  font-family: 'Cafe24Ssurround';
   line-height: 32px;
   letter-spacing: -0.04em;
 }
@@ -230,15 +241,67 @@ h1 {
 /* SKILL */
 
 
-
-@font-face {
-  font-family: 'Cafe24Ssurround';
-  src: url('./font/Cafe24Ssurround-v2.0.ttf') format('truetype'),
-    url('./font/Cafe24Ssurround-v2.0.otf') format('opentype'),
-    url('./font/Cafe24Ssurround-v2.0.woff2') format('woff2'),
-    url('./font/Cafe24Ssurround-v2.0.woff') format('woff');
-  /* 추가적인 폰트 속성을 지정할 수 있습니다. */
+.sli {
+  opacity: 0;
+  transition: opacity 1s ease;
+  transform: translate(0);
 }
+
+.pjc {
+  opacity: 0;
+  transition: opacity 1s ease;
+  transform: translate(0);
+}
+
+.pjc.visible {
+  opacity: 1;
+}
+
+.sli.visible {
+  opacity: 1;
+}
+
+.skill .pjc {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.skill.visible {
+  opacity: 0;
+  transform: translateY(0);
+}
+
+.skill-img {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.skill-img.visible,
+.pjc.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.skill-img {
+  width: 100px;
+  /* 이미지에 맞는 크기 설정 */
+}
+
+.skillstext {
+  text-align: center;
+}
+
+.skkikls {
+  margin-top: 10px;
+}
+
+.sks {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
 
 .skill {
   background: linear-gradient(to top, #ffe680 50%, transparent 20%);
@@ -267,20 +330,36 @@ h1 {
   font-weight: 300;
 }
 
+.skillimg {
+  opacity: 1;
+  transform: translate(0);
+}
+
 /* .skill h1 {
   border-bottom: 1px solid #02131D;
 } */
+.skill {
+  opacity: 0;
+  /* 초기에는 요소를 숨깁니다. */
+  transition: opacity 0.5s ease-in-out;
+  /* 부드러운 페이드 인/아웃 효과를 적용합니다. */
+}
+
+.skill.visible {
+  opacity: 1;
+  /* 스크롤이 맞춰질 때 요소가 나타나도록 설정합니다. */
+}
 
 .sli {
   padding: 100px 0;
 }
 
 .tp {
+  transition: 0.8s;
   padding: 20px 0;
   align-items: center;
 
 }
-
 
 
 .tp img {
@@ -288,11 +367,7 @@ h1 {
   width: 170px;
 }
 
-.navi a {
-  margin: 10px 30px 0 0;
-  color: #fff;
-  text-decoration: none;
-}
+
 
 .project {
   /* font-family: 'Cafe24Ssurround', sans-serif; */

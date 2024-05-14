@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { FaGithub, FaFigma, } from "react-icons/fa";
+import { useScrollVisibility } from "./useScrollVisibility";
 // import { BsLink45Deg } from "react-icons/bs";
 import { HiLink } from "react-icons/hi2";
 
@@ -15,12 +16,13 @@ import 'swiper/swiper-bundle.css';
 
 
 export default function Project() {
+    const isVisible = useScrollVisibility(".pjc");
 
 
 
     return (
         <>
-            <div className="pjc ">
+            <div className={`pjc container ${isVisible ? 'visible' : ''}`}>
                 <div className='project d-flex justify-content-center align-items-center m-5'>
                     <Link to="projectsSection" smooth={true} duration={500}></Link>
 
