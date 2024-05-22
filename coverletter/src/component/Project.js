@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-scroll';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { FaGithub, FaFigma, } from "react-icons/fa";
 import { useScrollVisibility } from "./useScrollVisibility";
 // import { BsLink45Deg } from "react-icons/bs";
@@ -32,8 +32,9 @@ export default function Project() {
                 </div>
 
                 <Swiper
-                    modules={[Navigation,]}
+                    modules={[Navigation, Autoplay]}
                     navigation
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                     className="d-md-flex  mt-4 mx-5"
                 >
@@ -129,6 +130,55 @@ export default function Project() {
 
                             <div className="works col-lg-6 py-5 py-lg-0 d-flex justify-content-center">
                                 <img className="worksimg col-lg-8 col-8 my-5 my-lg-0" src="../project/lee1.png" alt="ainbook" />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className="phtoflilo container d-lg-flex justify-content-center align-items-center flex-lg-row-reverse ">
+                            <div className="works col-10 col-lg-6 mx-auto">
+                                <div className="period b-flex">
+                                    <h4 className="pt-5"> <span># 개인프로젝트</span> / <span className="prohece">나한테 어울리는 여행지는?</span>
+                                    </h4>
+                                    <p className="petwors">
+                                        최근 날씨가 좋아지면서 여행 수요가 증가하고,
+                                        많은 사람들이 여행을 즐기고자 하는 데에 대한 반응성이 있습니다.
+                                        더불어 많은 사람들이 자신이 무엇을 좋아하는지 명확히 인지하지 못하고 있거나,
+                                        다양한 여행지를 선택하기에 혼란을 겪는 경우가 많아졌습니다.
+                                        이러한 상황에서, 이 프로젝트는 사용자들이 여행 취향을 보다 명확히 이해하고,
+                                        그에 맞는 여행지를 추천받을 수 있도록 도와주고자 합니다.
+                                    </p>
+                                </div>
+
+
+                                <div className="period  pt-5 b-flex ">
+                                    <h4># Period</h4>
+                                    <p>2024.03.26 ~ 2022.03.28</p>
+                                </div>
+                                <div className="period  pt-5 b-flex ">
+                                    <h4># Tech</h4>
+                                    <p> - React<br></br>
+                                        -Javascript <br></br>
+                                        - SCSS<br></br>
+                                        - Bootstrap 4.6.2<br></br>
+                                        - bootsstrap icon 1.11.1<br></br>
+                                        - Swiper 11<br></br>
+                                    </p>
+                                </div>
+                                <div className="period b-flex">
+
+                                </div>
+                                <div className="backicon d-flex ">
+                                    <a href="https://github.com/snb2323?tab=repositories" className="px-3" target="_blank"> <FaGithub className=" mb-3"></FaGithub></a>
+                                    <a href="https://www.notion.so/1e7173072d194f90a7c2f3a8bb04b2ce" target="_blank"> <img src="./img/notion.svg" className="notionimg"></img></a>
+                                    <a href="http://localhost:3001/psychologicaltest" target="_blank">
+                                        <HiLink className="sitelink" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="works col-lg-6 py-5 py-lg-0 d-flex justify-content-center">
+                                <img className="col-lg-8 col-8 my-5 my-lg-0" src="../project/atrip.png" alt="ainbook" />
                             </div>
                         </div>
                     </SwiperSlide>
